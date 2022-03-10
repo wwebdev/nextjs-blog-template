@@ -31,4 +31,4 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ---
 
 
-*created by [Vincent Will](https://wweb.dev/)*
+*created by [Vincent Will](https://twitter.com/wweb_dev)*
