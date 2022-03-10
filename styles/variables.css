@@ -1,7 +1,10 @@
+/* generate a nice palette with https://fffuel.co/pppalette/ */
+
 :root {
   --layout-width: 1200px;
   --dark-bg-color: #232323;
   --light-bg-color: #fafafa;
   --light-color: #cdcdcd;
   --primary-color: #00C6A7;
+  --primary-dark-color: #00664e;
 }

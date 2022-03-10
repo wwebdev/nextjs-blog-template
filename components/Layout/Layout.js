@@ -1,22 +1,24 @@
 import React from 'react'
+import Image from 'next/image'
 import styles from './Layout.module.css'
 import Head from '../Head/Head'
 import Navigation from '../Navigation/Navigation'
 
-const Layout = ({ children, title, description }) => {
+const Layout = ({ children, title, description, image }) => {
   return <div>
     <Head name={title} description={description} />
     <Navigation />
 
-    <header className={styles.header}>
+    { title && <header className={image ? styles.imageHeader : styles.header}>
+      { image && <Image src={image} alt={title} layout='fill' /> }
       <h1 className={styles.title}>
         {title}
       </h1>
 
-      <p className={styles.description}>
+      { description && <p className={styles.description}>
         {description}
-      </p>
-    </header>
+      </p> }
+    </header> }
 
     <main className={styles.main}>
       {children}

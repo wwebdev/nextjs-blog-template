@@ -30,9 +30,12 @@
   transition: color 0.3s ease;
 }
 
-.container a:hover {
+.container a:hover,
+.container a.active {
   color: var(--primary-color);
 }
+
+
 
 .container input {
   display: block;

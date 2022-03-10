@@ -1,0 +1,388 @@
+.container {
+  width: 100%;
+  text-align: left;
+
+  --nc-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
+
+	/* Light theme */
+	--nc-tx-1: #000000;
+	--nc-tx-2: #1A1A1A;
+	--nc-bg-1: #FFFFFF;
+	--nc-bg-2: #F6F8FA;
+	--nc-bg-3: #E5E7EB;
+	--nc-lk-1: #0070F3;
+	--nc-lk-2: #0366D6;
+	--nc-lk-tx: #FFFFFF;
+	--nc-ac-1: #79FFE1;
+	--nc-ac-tx: #0C4047;
+}
+
+.container * {
+	/* Reset margins and padding */
+	margin: 0;
+	padding: 0;
+}
+
+.container address,
+.container area,
+.container article,
+.container aside,
+.container audio,
+.container blockquote,
+.container datalist,
+.container details,
+.container dl,
+.container fieldset,
+.container figure,
+.container form,
+.container input,
+.container iframe,
+.container img,
+.container meter,
+.container nav,
+.container ol,
+.container optgroup,
+.container option,
+.container output,
+.container p,
+.container pre,
+.container progress,
+.container ruby,
+.container section,
+.container table,
+.container textarea,
+.container ul,
+.container video {
+	/* Margins for most elements */
+	margin-bottom: 1rem;
+}
+
+.container  {
+	/* Center body in page */
+	margin: 0 auto;
+	max-width: 750px;
+	padding: 2rem 0;
+	border-radius: 6px;
+	overflow-x: hidden;
+	word-break: break-word;
+	overflow-wrap: break-word;
+	background: var(--nc-bg-1);
+
+	/* Main body text */
+	color: var(--nc-tx-2);
+	font-size: 1.03rem;
+	line-height: 1.5;
+}
+
+.container ::selection {
+	/* Set background color for selected text */
+	background: var(--nc-ac-1);
+	color: var(--nc-ac-tx);
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+	line-height: 1;
+	color: var(--nc-tx-1);
+	padding-top: .875rem;
+}
+
+.container h1,
+.container h2,
+.container h3 {
+	color: var(--nc-tx-1);
+	padding-bottom: 2px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid var(--nc-bg-2);
+}
+
+.container h4,
+.container h5,
+.container h6 {
+	margin-bottom: .3rem;
+}
+
+.container h1 {
+	font-size: 2.25rem;
+}
+
+.container h2 {
+	font-size: 1.85rem;
+}
+
+.container h3 {
+	font-size: 1.55rem;
+}
+
+.container h4 {
+	font-size: 1.25rem;
+}
+
+.container h5 {
+	font-size: 1rem;
+}
+
+.container h6 {
+	font-size: .875rem;
+}
+
+.container a {
+	color: var(--nc-lk-1);
+}
+
+.container a:hover {
+	color: var(--nc-lk-2);
+}
+
+.container abbr:hover {
+	/* Set the '?' cursor while hovering an abbreviation */
+	cursor: help;
+}
+
+.container blockquote {
+	padding: 1.5rem;
+	background: var(--nc-bg-2);
+	border-left: 5px solid var(--nc-bg-3);
+}
+
+.container abbr {
+	cursor: help;
+}
+
+.container blockquote *:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.container a button,
+.container button,
+.container input[type="submit"],
+.container input[type="reset"],
+.container input[type="button"] {
+	font-size: 1rem;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background: var(--nc-lk-1);
+	color: var(--nc-lk-tx);
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: var(--nc-lk-tx);
+}
+
+.container a button[disabled],
+.container button[disabled],
+.container input[type="submit"][disabled],
+.container input[type="reset"][disabled],
+.container input[type="button"][disabled] {
+	cursor: default;
+	opacity: .5;
+
+	/* Set the [X] cursor while hovering a disabled link */
+	cursor: not-allowed;
+}
+
+.container button:focus,
+.container button:enabled:hover,
+.container input[type="submit"]:focus,
+.container input[type="submit"]:enabled:hover,
+.container input[type="reset"]:focus,
+.container input[type="reset"]:enabled:hover,
+.container input[type="button"]:focus,
+.container input[type="button"]:enabled:hover {
+	background: var(--nc-lk-2);
+}
+
+.container a img {
+	margin-bottom: 0px;
+}
+
+.container code,
+.container pre,
+.container kbd,
+.container samp {
+	/* Set the font family for monospaced elements */
+	font-family: var(--nc-font-mono);
+}
+
+.container code,
+.container samp,
+.container kbd,
+.container pre {
+	/* The main preformatted style. This is changed slightly across different cases. */
+	background: var(--nc-bg-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+	padding: 3px 6px;
+	/* ↓ font-size is relative to containing element, so it scales for titles*/
+	font-size: 0.9em;
+}
+
+.container kbd {
+	/* Makes the kbd element look like a keyboard key */
+	border-bottom: 3px solid var(--nc-bg-3);
+}
+
+.container pre {
+	padding: 1rem 1.4rem;
+	max-width: 100%;
+	overflow: auto;
+}
+
+.container pre code {
+	/* When <code> is in a <pre>, reset it's formatting to blend in */
+	background: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.container code pre {
+	/* When <pre> is in a <code>, reset it's formatting to blend in */
+	display: inline;
+	background: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.container details {
+	/* Make the <details> look more "clickable" */
+	padding: .6rem 1rem;
+	background: var(--nc-bg-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+}
+
+.container summary {
+	/* Makes the <summary> look more like a "clickable" link with the pointer cursor */
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.container details[open] {
+	/* Adjust the <details> padding while open */
+	padding-bottom: .75rem;
+}
+
+.container details[open] summary {
+	/* Adjust the <details> padding while open */
+	margin-bottom: 6px;
+}
+
+.container details[open]>*:last-child {
+	/* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
+	margin-bottom: 0;
+}
+
+.container dt {
+	font-weight: bold;
+}
+
+.container dd::before {
+	/* Add an arrow to data table definitions */
+	content: '→ ';
+}
+
+.container hr {
+	/* Reset the border of the <hr> separator, then set a better line */
+	border: 0;
+	border-bottom: 1px solid var(--nc-bg-3);
+	margin: 1rem auto;
+}
+
+.container fieldset {
+	margin-top: 1rem;
+	padding: 2rem;
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+}
+
+.container legend {
+	padding: auto .5rem;
+}
+
+.container table {
+	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+	border-collapse: collapse;
+	width: 100%
+}
+
+.container td,
+.container th {
+	border: 1px solid var(--nc-bg-3);
+	text-align: left;
+	padding: .5rem;
+}
+
+.container th {
+	background: var(--nc-bg-2);
+}
+
+.container tr:nth-child(even) {
+	/* Set every other cell slightly darker. Improves readability. */
+	background: var(--nc-bg-2);
+}
+
+.container table caption {
+	font-weight: bold;
+	margin-bottom: .5rem;
+}
+
+.container textarea {
+	/* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
+	max-width: 100%;
+}
+
+.container ol,
+.container ul {
+	/* Replace the browser default padding */
+	padding-left: 2rem;
+}
+
+.container li {
+	margin-top: .4rem;
+}
+
+.container ul ul,
+.container ol ul,
+.container ul ol,
+.container ol ol {
+	margin-bottom: 0;
+}
+
+.container mark {
+	padding: 3px 6px;
+	background: var(--nc-ac-1);
+	color: var(--nc-ac-tx);
+}
+
+.container textarea,
+.container select,
+.container input {
+	padding: 6px 12px;
+	margin-bottom: .5rem;
+	background: var(--nc-bg-2);
+	color: var(--nc-tx-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+.container img {
+	max-width: 100%;
+}

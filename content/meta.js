@@ -1,12 +1,12 @@
 const meta = {
   name: 'Next.js Blog Template',
-  description: 'A simple blog template with Next.js',
+  description: 'A simple blog template made with Next.js',
   pages: [{
     name: 'Home',
-    link: '/home'
+    link: '/',
   }, {
     name: 'Category',
-    link: '/category'
+    link: '/category',
   }]
 }
 
