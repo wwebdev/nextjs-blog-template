@@ -4,10 +4,10 @@ import PostLayout from '../../components/Layout/PostLayout'
 // defines the basic layout of posts with the /blog route
 const Post = () => {
   return <PostLayout useImage={true}>
-    <p></p>Here you can write your post!
+    <p>You can write your first post here!</p>
 
     <p>
-      This Post uses an image as header because I have added the parameter <code>{`useImage={true}`}</code>
+      This Post uses an image as header because I added the parameter <code>{`useImage={true}`}</code>
     </p>
 
     <p>

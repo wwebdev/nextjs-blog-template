@@ -13,5 +13,9 @@
 }
 
 .postContent h2 {
-  margin-top: 0;
+  margin: 0;
+}
+
+.postContent date {
+  opacity: 0.6;
 }

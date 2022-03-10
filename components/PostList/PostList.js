@@ -13,6 +13,7 @@ const PostList = ({ category, layout }) => {
       <div key={post.title} className={styles.post}>
         <Image src={post.image} alt={post.title} width={200} height={100}/>
         <div className={styles.postContent}>
+          { post.date && <date>{post.date}</date> }
           <h2>
             <Link href={post.link}>
               <a>{post.title}</a>
