@@ -11,7 +11,7 @@ const Post = () => {
     </p>
 
     <p>
-      Just use normal HTML Elements to write the blog post. You would prefer to write Markdown? I've got you covered.
+      Just use normal HTML Elements to write the blog post. You would prefer to write Markdown? I&apos;ve got you covered.
       Check out the <Link href="/blog/second_post"><a>Second Blog Post</a></Link>
     </p>
 

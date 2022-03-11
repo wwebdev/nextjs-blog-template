@@ -24,6 +24,15 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 
+## Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwwebdev%2Fnextjs-blog-template)
+
+Want to deploy somewhere else than Vercel? Check this blog post on how to export Next.js images:
+
+[Next.js 11 Images with Static Export](https://maxrohde.com/2021/07/25/next-js-11-images-with-static-export/)
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
