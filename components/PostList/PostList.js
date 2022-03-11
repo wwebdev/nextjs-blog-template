@@ -11,7 +11,9 @@ const PostList = ({ category, layout }) => {
   return <section className={styles.container}>
     { postList.map(post =>
       <div key={post.title} className={styles.post}>
-        <Image src={post.image} alt={post.title} width={200} height={100}/>
+        <div className={styles.imageContainer}>
+          <Image src={post.image} alt={post.title} width={200} height={133} layout="fill" />
+        </div>
         <div className={styles.postContent}>
           { post.date && <date>{post.date}</date> }
           <h2>
