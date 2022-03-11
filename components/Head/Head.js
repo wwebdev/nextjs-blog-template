@@ -7,6 +7,7 @@ const HeadComponent = ({ name, description, image = meta.shareImage, isArticle }
   const { baseUri = '' } = meta
   const router = useRouter()
   const link = baseUri + router.pathname
+  const imageLink = baseUri + image // TODO
 
   const title = meta.name === name
     ? name
@@ -37,10 +38,10 @@ const HeadComponent = ({ name, description, image = meta.shareImage, isArticle }
     <meta name="twitter:site" content={link} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image" content={imageLink} />
     { meta.twitter && <meta name="twitter:creator" content={`@${meta.twitter}`} /> }
     <meta property="og:title" content={title} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={imageLink} />
     <meta property="og:site_name" content={meta.name} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={link} />
