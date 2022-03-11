@@ -12,7 +12,7 @@ const PostList = ({ category, layout }) => {
     { postList.map(post =>
       <div key={post.title} className={styles.post}>
         <div className={styles.imageContainer}>
-          <Image src={post.image} alt={post.title} width={200} height={133} layout="fill" />
+          <Image src={post.image} alt={post.title} layout="fill" />
         </div>
         <div className={styles.postContent}>
           { post.date && <date>{post.date}</date> }
