@@ -4,9 +4,9 @@ import styles from './Layout.module.css'
 import Head from '../Head/Head'
 import Navigation from '../Navigation/Navigation'
 
-const Layout = ({ children, title, description, image }) => {
+const Layout = ({ children, title, description, image, isArticle = false }) => {
   return <div>
-    <Head name={title} description={description} />
+    <Head name={title} description={description} image={image} isArticle={isArticle} />
     <Navigation />
 
     { title && <header className={image ? styles.imageHeader : styles.header}>

@@ -48,11 +48,11 @@ const Navigation = () => {
           )}
         </ul>
         <ul className={styles.socialIcons}>
-          <li>
-            <a href="https://twitter.com/wweb_dev">
+          { meta.twitter && <li>
+            <a href={`https://twitter.com/${meta.twitter}`}>
               <TwitterIcon />
             </a>
-          </li>
+          </li> }
           <li>
             <a href="https://github.com/wwebdev/nextjs-blog-template">
               <GitHubIcon />

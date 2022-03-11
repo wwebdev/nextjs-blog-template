@@ -9,7 +9,7 @@ const PostLayout = ({ children, useMarkdown, useImage }) => {
   const router = useRouter()
   const postData = posts.find(p => p.link === router.pathname)
 
-  return <Layout title={postData.title} image={useImage && postData.image}>
+  return <Layout title={postData.title} image={useImage && postData.image} isArticle>
     <section className={styles.container}>
       {useMarkdown && <ReactMarkdown>{children}</ReactMarkdown>}
       {!useMarkdown && children}
