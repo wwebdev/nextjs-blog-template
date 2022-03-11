@@ -5,7 +5,7 @@ const posts = [
     image: '/posts/post1.jpg',
     link: '/blog/first_post',
     categories: ['main'], // specifies where it will be rendered
-    date: 'March 10 2022'
+    date: 'March 10 2022' // optional
   },
   {
     title: 'This is written in Markdown',
@@ -16,10 +16,11 @@ const posts = [
     date: 'February 28 2022'
   },
   {
-    title: 'How does it work?',
-    description: 'This is an external link to my website where I explain this template. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren...',
+    title: 'Check out the GitHub Repo',
+    description: 'This is an external link to GitHub. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren...',
     image: '/posts/post3.jpg',
-    link: 'todo',
+    link: 'https://github.com/wwebdev/nextjs-blog-template',
+    date: 'February 09 2022',
     categories: ['main']
   }
 ]
