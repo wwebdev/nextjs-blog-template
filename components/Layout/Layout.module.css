@@ -43,7 +43,7 @@
 }
 
 .footer a {
-  color: var(--primary-color);
+  color: var(--primary-dark-color);
 }
 
 .footer a:hover {

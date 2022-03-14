@@ -22,6 +22,8 @@
   position: relative;
   margin: 0 20px;
   flex-shrink: 0;
+  width: 84px;
+  height: 40px;
 }
 
 .container a {
@@ -109,6 +111,8 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    width: 84px;
+    height: 40px;
   }
 
   .navigation {

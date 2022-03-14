@@ -30,8 +30,7 @@ const Navigation = () => {
           <Image
             src="/imgs/logo-placeholder.png"
             alt="My Awesome Website"
-            width={84} // adjust based on your image
-            height={40} // adjust based on your image
+            layout="fill"
             priority
           />
         </a>
