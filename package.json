@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "npm run build && next export",
-    "postexport": "node scripts/postExport.js"
+    "postbuild": "node scripts/postBuild.js"
   },
   "dependencies": {
     "@emotion/react": "^11.8.1",

@@ -9,7 +9,7 @@ const robotsTxt = `User-agent: *
 Sitemap: ${meta.baseUri || ''}/sitemap.xml
 Disallow:`
 
-fs.writeFileSync("out/robots.txt", robotsTxt)
+fs.writeFileSync("public/robots.txt", robotsTxt)
 console.log("robots.txt saved!")
 
 // SITEMAP.XML
@@ -31,7 +31,7 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
         )}
 </urlset>`.split(',<url>').join('<url>')
 
-fs.writeFileSync("out/sitemap.xml", sitemapXml);
+fs.writeFileSync("public/sitemap.xml", sitemapXml);
 console.log("sitemap.xml saved!");
 
 
@@ -72,6 +72,6 @@ rss = rss +
 
 </rss>`
 
-fs.writeFileSync("out/rss.xml", rss);
+fs.writeFileSync("public/rss.xml", rss);
 
 console.log('Generating RSS Feed done')
