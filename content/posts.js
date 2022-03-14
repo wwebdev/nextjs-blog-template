@@ -22,7 +22,15 @@ const posts = [
     link: 'https://github.com/wwebdev/nextjs-blog-template',
     date: 'February 09 2022',
     categories: ['main']
+  },
+  {
+    title: 'Simple Layout',
+    description: 'This is the layout option "simple". Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren...',
+    image: '/posts/post3.jpg',
+    link: '/blog/second_post',
+    date: 'February 09 2022',
+    categories: ['category']
   }
 ]
 
-export default posts
+module.exports = posts

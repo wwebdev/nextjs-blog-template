@@ -5,8 +5,10 @@ const meta = {
   baseUri: 'https://wwebdev-nextjs-blog-template.vercel.app', // optional
 
   twitter: 'wweb_dev', // optional
-  // TODO add more social accounts & links here
+  github: 'https://github.com/wwebdev/nextjs-blog-template', // optional
+  // facebook: 'https://facebook.com/something', // optional
 
+  // Navigation -> optional
   pages: [{
     name: 'Home',
     link: '/',
@@ -16,4 +18,4 @@ const meta = {
   }]
 }
 
-export default meta
+module.exports = meta

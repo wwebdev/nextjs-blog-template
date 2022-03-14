@@ -32,8 +32,7 @@ const HeadComponent = ({ name, description, image = meta.shareImage, isArticle }
     <meta name='msapplication-TileColor' content='#fff' />
     <meta name='msapplication-tap-highlight' content='no' />
     <meta name="description" content={description} />
-    {/* TODO variables */}
-    <meta name="theme-color" content='#2c3e50' />
+    <meta name="theme-color" content='#232323' />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content={link} />
     <meta name="twitter:title" content={title} />

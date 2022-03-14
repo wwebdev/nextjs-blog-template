@@ -2,7 +2,7 @@
 
 :root {
   --layout-width: 1200px;
-  --dark-bg-color: #232323;
+  --dark-bg-color: #232323; /* This is also used in the Head.js as theme-color */
   --light-bg-color: #fafafa;
   --light-color: #cdcdcd;
   --primary-color: #00C6A7;

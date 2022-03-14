@@ -7,6 +7,7 @@ import { useRouter } from 'next/router'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import RssFeedIcon from '@mui/icons-material/RssFeed'
+import FacebookIcon from '@mui/icons-material/Facebook'
 
 import styles from './Navigation.module.css'
 import meta from '../../content/meta'
@@ -53,11 +54,16 @@ const Navigation = () => {
               <TwitterIcon />
             </a>
           </li> }
-          <li>
-            <a href="https://github.com/wwebdev/nextjs-blog-template">
+          { meta.github && <li>
+            <a href={meta.github}>
               <GitHubIcon />
             </a>
-          </li>
+          </li> }
+          { meta.facebook && <li>
+            <a href={meta.facebook}>
+              <FacebookIcon />
+            </a>
+          </li> }
           <li>
             <a href="/rss.xml">
               <RssFeedIcon />
