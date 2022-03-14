@@ -32,7 +32,7 @@
 
 .container a:hover,
 .container a.active {
-  color: var(--primary-color);
+  color: var(--primary-dark-color);
 }
 
 
@@ -150,6 +150,11 @@
 
   .container a {
     color: var(--light-color);
+  }
+
+  .container a:hover,
+  .container a.active {
+    color: var(--primary-color);
   }
 
   .container input {
