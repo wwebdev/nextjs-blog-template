@@ -50,22 +50,22 @@ const Navigation = () => {
         </ul>
         <ul className={styles.socialIcons}>
           { meta.twitter && <li>
-            <a href={`https://twitter.com/${meta.twitter}`}>
+            <a href={`https://twitter.com/${meta.twitter}`} title="Twitter">
               <TwitterIcon />
             </a>
           </li> }
           { meta.github && <li>
-            <a href={meta.github}>
+            <a href={meta.github} title="GitHub">
               <GitHubIcon />
             </a>
           </li> }
           { meta.facebook && <li>
-            <a href={meta.facebook}>
+            <a href={meta.facebook} title="Facebook">
               <FacebookIcon />
             </a>
           </li> }
           <li>
-            <a href="/rss.xml">
+            <a href="/rss.xml" title="RSS">
               <RssFeedIcon />
             </a>
           </li>

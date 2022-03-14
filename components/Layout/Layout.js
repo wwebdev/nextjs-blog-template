@@ -25,13 +25,11 @@ const Layout = ({ children, title, description, image, isArticle = false }) => {
     </main>
 
     <footer className={styles.footer}>
-      <a
-        href="https://wweb.dev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by wweb.dev
-      </a>
+        Powered by <a
+          href="https://wweb.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >wweb.dev</a>
     </footer>
   </div>
 }

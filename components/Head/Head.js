@@ -16,9 +16,7 @@ const HeadComponent = ({ name, description, image = meta.shareImage, isArticle }
   return <Head>
     <title>{title}</title>
     <link rel="icon" href="/favicon.ico" />
-    {/* TODO */}
     <link rel='apple-touch-icon' sizes='192x192' href='apple-icon.png' />
-    <link rel='manifest' href='/manifest.json' />
     <link rel="canonical" href={link} />
     <meta charSet="utf-8"></meta>
     <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
