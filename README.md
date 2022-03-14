@@ -39,8 +39,6 @@ Want to deploy somewhere else than Vercel? Check this blog post on how to export
 
 - The colors and theming can be updated by changing the `/styles/variables.css`
 
-TODO - more detailed docs
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 

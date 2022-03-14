@@ -30,7 +30,6 @@
   opacity: 0.6;
 }
 
-/* TODO as a variable */
 @media screen and (max-width: 600px) {
   .post {
     flex-direction: column;
