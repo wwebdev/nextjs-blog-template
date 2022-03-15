@@ -10,7 +10,7 @@ const Layout = ({ children, title, description, image, isArticle = false }) => {
     <Navigation />
 
     { title && <header className={image ? styles.imageHeader : styles.header}>
-      { image && <Image src={image} alt={title} layout='fill' /> }
+      { image && <Image src={image} alt={title} layout='fill' /> }
       <h1 className={styles.title}>
         {title}
       </h1>

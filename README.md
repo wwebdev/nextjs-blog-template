@@ -1,6 +1,6 @@
 # Next.js Blog Template
 
-This is a work in progress...
+This is a simple blog template to quickly get started with writing. It has a clean design and provides a lot of flexibility.
 
 [Demo](https://wwebdev-nextjs-blog-template.vercel.app/)
 
@@ -31,13 +31,14 @@ Want to deploy somewhere else than Vercel? Check this blog post on how to export
 
 - In general you can just browse through the repository to get a better understanding on how things work - I left comments on the most important parts.
 
-- The most important page infos can be set in the `/content/meta.js`. They are used on various places around the website.
+- The most important page infos and the navigation can be set in the `/content/meta.js`. They are used on various places around the website.
 
 - To add a new blog post create an entry in the `/content/posts.js`. Then you can create the corresponding page under `pages/*.js`. The structure of the pages is up to you. Have a look at the demo pages in `/pages/blog/` to see how the layout works.
 
 - You can assign categories to blog posts. Then use the PostList component to render the posts based on the category. Have a look at `/pages/index.js` to see how it works.
 
 - The colors and theming can be updated by changing the `/styles/variables.css`
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
